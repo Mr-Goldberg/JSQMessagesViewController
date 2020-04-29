@@ -113,6 +113,10 @@ FOUNDATION_EXPORT const CGFloat kJSQMessagesToolbarContentViewHorizontalSpacingD
  */
 @property (weak, nonatomic, readonly, nullable) UIView *rightBarButtonContainerView;
 
+@property (weak, nonatomic, readonly) IBOutlet UIView *bottomBarContainerView;
+
+@property (weak, nonatomic, readonly) IBOutlet NSLayoutConstraint *bottomBarContainerViewHeightConstraint;
+
 #pragma mark - Class methods
 
 /**

@@ -36,6 +36,10 @@ const CGFloat kJSQMessagesToolbarContentViewHorizontalSpacingDefault = 8.0f;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftHorizontalSpacingConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightHorizontalSpacingConstraint;
 
+@property (weak, nonatomic) IBOutlet UIView *bottomBarContainerView;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomBarContainerViewHeightConstraint;
+
 @end
 
 
@@ -60,6 +64,7 @@ const CGFloat kJSQMessagesToolbarContentViewHorizontalSpacingDefault = 8.0f;
 
     self.leftHorizontalSpacingConstraint.constant = kJSQMessagesToolbarContentViewHorizontalSpacingDefault;
     self.rightHorizontalSpacingConstraint.constant = kJSQMessagesToolbarContentViewHorizontalSpacingDefault;
+    self.bottomBarContainerViewHeightConstraint.constant = 0; // Hide 'bottomBarContainerView' initially
 
     self.backgroundColor = [UIColor clearColor];
 }
